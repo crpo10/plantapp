@@ -113,6 +113,15 @@ class ProductsList extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Text(
+            'Indoor',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
             plants[i].name,
             style: TextStyle(
               fontSize: height * 0.02,
