@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:plantapp/src/utils/main_colors.dart';
 import 'package:plantapp/src/widgets/custom_button.dart';
 
-class LoginFormWidget extends StatelessWidget {
-  const LoginFormWidget({Key? key}) : super(key: key);
+class LoginButtonsWidget extends StatelessWidget {
+  const LoginButtonsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

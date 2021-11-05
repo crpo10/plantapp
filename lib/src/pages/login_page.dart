@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plantapp/src/widgets/background_widget.dart';
-import 'package:plantapp/src/widgets/form_widget.dart';
+import 'package:plantapp/src/widgets/login_buttons_widget.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
         body: Stack(
       children: [
         BackgroundImage(),
-        LoginFormWidget(),
+        LoginButtonsWidget(),
       ],
     ));
   }
