@@ -51,7 +51,7 @@ class LoginFormWidget extends StatelessWidget {
         ),
         Container(
           width: width * 0.9,
-          height: height * 0.4,
+          height: height * 0.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Colors.white.withOpacity(0.2),

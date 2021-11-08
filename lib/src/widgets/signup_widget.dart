@@ -15,10 +15,11 @@ class SingUpForm extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Column(
+      // crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         SafeArea(
           child: Container(
-            height: height * 0.1,
+            height: height * 0.05,
             child: Row(
               children: [
                 Padding(
@@ -34,12 +35,19 @@ class SingUpForm extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Text(
+                //   'Planty',
+                //   style: TextStyle(
+                //     color: Colors.white,
+                //     fontSize: height * 0.06,
+                //   ),
+                // ),
               ],
             ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 40),
+          padding: const EdgeInsets.only(bottom: 10),
           child: Text(
             'Planty',
             style: TextStyle(
@@ -50,12 +58,13 @@ class SingUpForm extends StatelessWidget {
         ),
         Container(
           width: width * 0.9,
-          height: height * 0.5,
+          height: height * 0.65,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Colors.white.withOpacity(0.2),
           ),
           child: Column(
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),

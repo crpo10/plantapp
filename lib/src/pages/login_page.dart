@@ -1,6 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/physics.dart';
+
 import 'package:get/get.dart';
 import 'package:plantapp/src/controller/login_controller.dart';
 import 'package:plantapp/src/utils/change_status_light.dart';
@@ -17,19 +17,20 @@ class LoginPage extends StatelessWidget {
     changeStatusLight();
 
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         body: GetBuilder<LoginController>(
-      builder: (_) => Stack(
-        children: [
-          BackgroundImage(),
-          (_.index == 1)
-              ? FadeInUp(
-                  child: LoginFormWidget(),
-                )
-              : (_.index == 2)
-                  ? FadeInUp(child: SingUpForm())
-                  : FadeIn(child: LoginButtonsWidget())
-        ],
-      ),
-    ));
+          builder: (_) => Stack(
+            children: [
+              BackgroundImage(),
+              (_.index == 1)
+                  ? FadeInUp(
+                      child: LoginFormWidget(),
+                    )
+                  : (_.index == 2)
+                      ? FadeInUp(child: SingUpForm())
+                      : FadeIn(child: LoginButtonsWidget())
+            ],
+          ),
+        ));
   }
 }

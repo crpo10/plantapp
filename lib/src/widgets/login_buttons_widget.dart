@@ -33,7 +33,7 @@ class LoginButtonsWidget extends StatelessWidget {
                 fontSize: height * 0.025,
               ),
             ),
-            SizedBox(height: height * 0.4),
+            SizedBox(height: height * 0.3),
             _LoginButtons(),
             Spacer(),
             Text(
