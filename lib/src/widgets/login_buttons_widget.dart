@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:plantapp/src/controller/login_controller.dart';
 import 'package:plantapp/src/utils/main_colors.dart';
 import 'package:plantapp/src/widgets/custom_button.dart';
 
@@ -52,6 +54,7 @@ class _LoginButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final c = Get.find<LoginController>();
     return Column(
       children: [
         Padding(
@@ -61,13 +64,17 @@ class _LoginButtons extends StatelessWidget {
             color: MainColors.dark.withOpacity(.5),
             texto: 'Log in',
             width: 300,
-            onPressed: () {},
+            onPressed: () {
+              c.changeIndex(1);
+            },
           ),
         ),
         CustomButton(
           colorText: Colors.black,
           color: Colors.white.withOpacity(.7),
-          onPressed: () {},
+          onPressed: () {
+            c.changeIndex(2);
+          },
           texto: 'Sign Up',
           width: 300,
         ),

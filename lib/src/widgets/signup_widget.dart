@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:plantapp/src/controller/login_controller.dart';
-import 'package:plantapp/src/pages/home_page.dart';
 
 import 'package:plantapp/src/utils/main_colors.dart';
 import 'package:plantapp/src/widgets/custom_button.dart';
 import 'package:plantapp/src/widgets/input_widgets.dart';
 
-class LoginFormWidget extends StatelessWidget {
-  const LoginFormWidget({Key? key}) : super(key: key);
+class SingUpForm extends StatelessWidget {
+  const SingUpForm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +50,7 @@ class LoginFormWidget extends StatelessWidget {
         ),
         Container(
           width: width * 0.9,
-          height: height * 0.4,
+          height: height * 0.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Colors.white.withOpacity(0.2),
@@ -61,11 +60,21 @@ class LoginFormWidget extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: InputField(
-                  label: 'Email',
+                  icon: Icon(
+                    Icons.person_outline,
+                    color: Colors.white,
+                  ),
+                  label: 'User Name',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: InputField(
                   icon: Icon(
                     Icons.email_outlined,
                     color: Colors.white,
                   ),
+                  label: 'Email',
                 ),
               ),
               Padding(
@@ -83,11 +92,9 @@ class LoginFormWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(15.0),
                 child: CustomButton(
                   color: MainColors.darkgreen.withOpacity(0.6),
-                  onPressed: () {
-                    Get.to(() => HomePage());
-                  },
+                  onPressed: () {},
                   colorText: Colors.white,
-                  texto: 'Log In',
+                  texto: 'Sign Up',
                 ),
               )
             ],
