@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantapp/src/utils/change_status_light.dart';
 import 'package:plantapp/src/utils/main_colors.dart';
 import 'package:plantapp/src/widgets/bottom_navbar.dart';
 import 'package:plantapp/src/widgets/custom_appbar.dart';
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+    changeStatusDark();
 
     return Scaffold(
       bottomNavigationBar: CustomBottonNavbar(),

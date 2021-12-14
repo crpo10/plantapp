@@ -15,7 +15,6 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     changeStatusLight();
-
     return Scaffold(
         resizeToAvoidBottomInset: false,
         body: GetBuilder<LoginController>(
