@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       initialRoute: '/',
       initialBinding: LoginBinding(),
-      // home: LoginPage(),
       theme: themeData.copyWith(
         textTheme: GoogleFonts.rubikTextTheme(
           Theme.of(context).textTheme,
